@@ -78,7 +78,7 @@ return [
                     'host' => env('REVERB_HOST'),
                     'port' => env('REVERB_PORT', 443),
                     'scheme' => env('REVERB_SCHEME', 'https'),
-                    'useTLS' => env('REVERB_SCHEME', 'https') === 'https',
+                    'useTLS' => 'https' === env('REVERB_SCHEME', 'https'),
                 ],
                 'allowed_origins' => [env('REVERB_ALLOWED_ORIGINS', 'htmx.test')],
                 'ping_interval' => env('REVERB_APP_PING_INTERVAL', 60),

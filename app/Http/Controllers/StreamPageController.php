@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class StreamPageController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(): View
     {
         $comments = Comment::with('user')->latest()->get();
 
