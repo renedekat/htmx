@@ -35,7 +35,7 @@ and also updating the `implements` interface.
 
 However, using the queue is more scalable.
 
-Start the queue worker: `php artisan queue work`<br>
+Start the queue worker: `php artisan queue:work`<br>
 In a different terminal run `php artisan reverb:start --debug  --host="0.0.0.0" --hostname="htmx.test"`<br>
 In a different terminal run `npm run dev` or `npm run build` if you're not planning on making changes
 
